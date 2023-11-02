@@ -200,6 +200,26 @@ console.log(sortierung2);
 // Versuche diese Sätze umzukehren: "Ella mag alle Bohnen" und "han nesaH has ennaH".
 
 const name = "Konstantin Wiefel";
+const test1 = "Sergio, Hannah, Regallager, Reliefpfeiler und Rentner";
+const test2 = "Ella mag alle Bohnen";
+const test3 = "han nesaH has ennaH";
 
-const switchIt = name.split(" ").reverse();
-console.log(switchIt);
+const switchIt2 = (param) => param.split("").reverse().join("");
+
+console.log(switchIt2(name));
+console.log(switchIt2(test1));
+console.log(switchIt2(test2));
+console.log(switchIt2(test3));
+
+// =============================== Array-Sort-Level-2_2 ======================
+
+// In dieser Übung lernst du, wie man die Nummern 0-∞ aufsteigend sortiert.
+// Sortiere die Nummern aufsteigend.
+// Der Code steht im Code-Snippet.
+// Verwende den Befehl sort() und Google, um die Aufgabe korrekt auszuführen.
+// Überprüfe das Ergebnis in der Konsole.
+
+let numArray2 = [36, 324, 122, 62, 98, 88, 99, 1000];
+
+const sortNumbers = numArray2.sort((num1, num2) => num1 - num2);
+console.log(sortNumbers);
